@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List Margo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background-color: #f8f1ff; /* Light purple background */
+            color: #5a189a; /* Dark purple text */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+    text-align: center;
+    color: #9d4edd; /* Purple text color for the title */
+}
+input {
+    width: calc(100% - 120px); /* Adjusted width to fit alongside the button */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #e9c46a; /* Yellow border for emphasis */
+    border-radius: 5px;
+    background-color: #ffe8cc; /* Light yellow background */
+    color: #5a189a; /* Dark purple text */
+}
+button {
+    padding: 10px;
+    background-color: #f72585; /* Bright pink background for attention */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+button:hover {
+    background-color: #d81159; /* Darker pink to indicate interaction */
+}
+.task-list {
+    margin-top: 20px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff; /* White background for clarity */
+    border: 1px solid #9d4edd; /* Purple border for aesthetics */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.task span {
+    flex: 1;
+    margin-right: 10px;
+    color: #5a189a; /* Dark purple text for consistency */
+}
+.remove {
+    background-color: #e63946; /* Bright red to signal deletion */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove:hover {
+    background-color: #d00000; /* Darker red to indicate interaction */
+}
+</style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button id="addTask">Add Task</button>
+    <div class="task-list" id="taskList"></div>
+    <!-- Include external JavaScript file -->
+    <script src="ProjektTodo.js"></script>
+</body>
+</html>
 </head>
 <body>
     
-</body>
-</html>
